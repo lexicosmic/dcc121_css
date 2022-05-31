@@ -6,58 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplo 04: CSS</title>
     <style>
-      ol li {
-        /* Descendente de */
+      .residente {
+        color: lightcoral;
+      }
+      .cidade {
+        /* ol li Descendente de */
         text-decoration: underline;
-        text-decoration-style: dashed !important;
+        text-decoration-style: dashed;
         font-size: medium;
       }
 
-      ul > li {
-        /* Filho de */
+      li.estado {
+        /*ul > li Filho de */
         text-decoration: underline;
-        text-decoration: dotted;
+        text-decoration-style: dotted;
         font-size: medium;
       }
     </style>
   </head>
   <body>
-    <h1>Exemplo 04: CSS</h1>
+    <h1 class="cidade">Exemplo 04: CSS</h1>
     <ol>
-      <li style="font-size: x-large">
+      <li class="estado">
         Minas Gerais
         <ul>
-          <li>Governador Valadares</li>
-          <li>Juiz de Fora</li>
-          <li>Belo Horizonte</li>
-          <li>Ipatinga</li>
+          <li class="cidade">Governador Valadares</li>
+          <li class="cidade">Belo Horizonte</li>
+          <li class="cidade">Ipatinga</li>
+          <li class="cidade residente">Juiz de Fora</li>
         </ul>
       </li>
-      <li style="font-weight: bolder">Rio de Janeiro</li>
-      <li
-        style="
-          font-size: x-small;
-          font-weight: lighter;
-          text-transform: uppercase;
-        "
-      >
-        São Paulo
+      <li class="estado">
+        Rio de Janeiro
+        <ol>
+          <li class="cidade">Angra dos Reis</li>
+          <li class="cidade">Volta Redonda</li>
+        </ol>
       </li>
-      <li
-        style="
-          font-size: x-small;
-          font-weight: bolder;
-          font-variant: small-caps;
-        "
-      >
+      <li class="estado">
+        São Paulo
+        <ol>
+          <li class="cidade">Santos</li>
+        </ol>
+      </li>
+      <li class="estado">
         Espírito Santo
+        <ol>
+          <li class="cidade">Vila Velha</li>
+          <li class="cidade">Vitória</li>
+        </ol>
       </li>
     </ol>
-    <ul>
-      <li>Vila Velha</li>
-      <li>Vitória</li>
-      <li>Angra dos Reis</li>
-      <li>Volta Redonda</li>
-    </ul>
   </body>
 </html>
