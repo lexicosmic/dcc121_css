@@ -17,14 +17,11 @@ div {
 
   div#b{
     background-color:hwb(0deg 70% 6%);
-    padding: 20px 10px;
-    float: right;
-  }
-
-  div#c{
-    float: right;
-  }
+    position: absolute;  
+    top: 0px;
+    left: 0px;
+}
 
   div#d{
-    background-color:coral;
+    background-color:rgb(255, 194, 172);
   }
