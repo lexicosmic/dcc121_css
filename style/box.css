@@ -6,10 +6,9 @@ div {
     height: 120px;
     overflow: auto;
     padding: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color:hsl(16deg 90% 85%);
+    border: solid 2px hsl(16deg 90% 85%);
     margin: 15px;
+    box-sizing: border-box;
   }
 
   div#a{
@@ -18,4 +17,5 @@ div {
 
   div#b{
     background-color:hwb(0deg 70% 6%);
+    padding: 20px 10px;
   }
